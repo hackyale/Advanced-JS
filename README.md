@@ -4,7 +4,7 @@ Here you can find the homework, slides and other materials.
 
 #### Submitting homework
 
-Homework will be submitted in the following way:
+Homework that needs to be submitted will be in the following way:
 
 - Fork this repo
 - Create a folder for yourself called firstname.lastname
