@@ -1,6 +1,7 @@
 ## Advanced JS: Homework 1
 
-**Estimated time: 60 mins. See the class page for how to submit.**
+**Estimated time: 60 mins. See the class page for how to submit.**  
+**Due Tuesday, Sep. 23 at 2pm**
 
 #### Part 1: Reddit Hot Stories
 
