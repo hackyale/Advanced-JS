@@ -22,19 +22,21 @@ var loadJSON = function() {
   });
 }
 
-var loadWhiteHouse = function() {
-  var whitehousePetitionsJSON = "https://api.whitehouse.gov/v1/petitions.json?limit=3&offset=0&createdBefore=1352924535";
-  $.get(whitehousePetitionsJSON, function(response) {
-    console.log("working link");
-  })
+var getWeather = function() {
+  var NewHavenWeather = "http://api.openweathermap.org/data/2.5/weather?q=NewHaven,usa";
+  $.get(NewHavenWeather, function(response) {
+    var tempInK = response.main.temp;
+    var tempInF = Math.floor((tempInK - 273)* 1.8) + " degrees F";
+    alert(tempInF);
+  });
 }
 
 $(document).ready(function() {
   $("#refresh-button").click(function() {
     loadJSON();
   });
-  $("#petition-button").click(function() {
-    loadWhiteHouse();
+  $("#weather-button").click(function() {
+    getWeather();
   });
   
 });
