@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
 <head>
-	<title></title>
-	<script type="text/javascript" src="./script.js"></script>
+  <!-- Make sure to include jQuery *before* your own Javascript -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./script.js"></script>
 </head>
 <body>
-<script type="text/javascript">
-	callTwice(helloUniverse);
-</script>
+  <h1>Top Reddit Stories:</h1>
+  <ul id="list"></ul>
+  <button id="refresh-button">Refresh</button>
+  <button id="petition-button">Load White House Petitions</button>
 </body>
 </html>
