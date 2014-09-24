@@ -27,11 +27,11 @@ And the following functions:
 #### Part 3: My shadow
 
 **Code template in `week2` folder**  
-Write code that makes something follow your mouse around (an image, some text, a blue box, an `<svg>` element—it could be anything!).
+Write code that makes something follow your mouse around. The object could be an image, some text, an `<svg>` element, or anything. In the example code, I used a blue dot. 
 
 #### Part 3 (Bonus)!: My lazy shadow
 
-Give your item a drag, so that it looks lazy: instead of following your mouse around immediately, have it wait some amount of time (maybe ~300ms).
+Give your item a drag, so that it looks lazy: instead of following your mouse around immediately, have it wait some amount of time (maybe ~300ms). Hint: the `setTimeout` function will prove helpful. 
 
 #### Part 4: Me online!
 
@@ -44,7 +44,7 @@ Thus, to get data, you would send a request to (make sure to use HTTPS)
 
     https://graph.facebook.com/me?access_token=CAACEdEose0cBAK0ILXnxSN8TSvCqvKtFroh7vzMzB7tZBL00z9hneo0g1AusC1NkUtVnBo8pW51GdKn26YoNFqtLeuBc849SusuUzxZCxyDvB2gjFI2iZCmpeYngbvajE610H7R8buek4ZBBLynQ2ARPiHndjQrfLCBnhyqZAAtuJp7L0ubaijFkgyg7p1GH9h8UA68Kj1ZBXVaCQ1p0xC.  
 
-If you don't know the `?x=y` syntax in the url (in this case `access_token=CAAC...`, read up on URL query parameters [on Wikipedia](http://en.wikipedia.org/wiki/Query_string). You can use multiple query string parameters to get different data: `https://graph.facebook.com/me?fields=profile,picture&access_token=...`. To specify what data you want to send, you can use the `data` key in the object you pass to the `$.ajax` function call (see the code template if this is unclear).
+If you don't know the `?x=y` syntax in the url (in this case `access_token=CAAC...`), read up on URL query parameters [on Wikipedia](http://en.wikipedia.org/wiki/Query_string). You can use multiple query string parameters to get different data: `https://graph.facebook.com/me?fields=profile,picture&access_token=...`. To specify what data you want to send, you can use the `data` key in the object you pass to the `$.ajax` function call (see the code template if this is unclear).
 
 #### Part 4 (Bonus!): Profile pictures galore
 
@@ -52,10 +52,10 @@ Use the Facebook API to get a link to your own Facebook picture, and show it on 
 
 #### Part 4 (Big bonus!): Complete control
 
-Use the Graph API explorer to create an access token that allows you to post to
+Use the Graph API Explorer to create an access token that allows you to post to
 your own newsfeed. Then create a UI that lets you type in a message, and post 
-it to your newsfeed! You probably also want to add functionality to delete
-posts as well ;)
+it to your newsfeed using that access token. You probably also want to add 
+functionality to delete posts as well ;) Hint: you'll need to make a `post` request this time. 
 
 #### Part 5 (Bonus!): Play time
 
