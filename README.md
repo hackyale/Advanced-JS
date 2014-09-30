@@ -22,5 +22,6 @@ Homework that needs to be submitted will be in the following way:
 - Put your code in `homework/weekX`, where X corresponds to the week number. 
 - Commit, and push
 - First time only: email rafi@hackyale.com a link to your repo.
+- Second time and after: Use [this](https://help.github.com/articles/fork-a-repo) help page (Step 3) to sync your repo to this one. Then pull down the new material, and when you're done, push *to your own repo*. The instructor will check it at the due date and time, so please push before then.
 
 If you don't know how to use git, take the time to learn about it! If you're really stuck, then just email your `hw1` folder as a zip file. 
