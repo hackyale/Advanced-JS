@@ -11,7 +11,7 @@ $(document).ready(function() {
     // You can change the css of an element with the .css function—
     //   look up the documentation for it on jQuery.com!
     var followDot = function() {
-      $("#follow-dot").css({ "top": mouseCoord.pageY-4, "left": mouseCoord.pageX-6.5 });
+      $("#follow-dot").css({ "top": mouseCoord.pageY, "left": mouseCoord.pageX });
     }
     setTimeout(followDot(), 300);
     // console.log(mouseCoord.pageX, mouseCoord.pageY); // Just to see what's going on. 
@@ -69,11 +69,8 @@ var getFB = function() {
     method: "get", // Using GET
     url: "https://graph.facebook.com/me", // Get my own info
     data: {
-      fields: "id,name,picture", // What goes here? 
-      // Access token obtained at https://developers.facebook.com/tools/explorer
-      // Note that it expires after a while, so you occasionally need to go back
-      //   and get another one. 
-      access_token: "CAACEdEose0cBAEFxCIzfbvVk5AIJJ72rNdMrCdLJtAWDWu22OMOB7ljVJlaC8x9KoFtp4ZCOzZBubkUVaDMZAr0DesyNEfsw4CRaQXFLpNVD1Du5F2tAyxyyoohbMAiF7AZBp9WvIkjt4pZApYGMUx1ZBO7gVZBSaMB0ozbZBkhi3UqNz1GAzoncmzuEOLZB4UOLlnLUVm04kMWWLHmJNJcUF"
+      fields: "id,name,picture", 
+      access_token: "CAACEdEose0cBAMKdVP2YeZAqpWZBDd5reLuV4ZCmaZAur08Sxedx6k56heQEjJOK912n85MmcBSYQIZAroWy511ITP7olZBVhZABCThluvf9VGZBEZCNzOwWvwaaRAJBUZCe6lGqPM9JJI8jZCABPE1GHq6UZBepwsFB76IcoY1FqUVxCvACUPCtnde52spYBxPa5yikU905aRKeT3qGAmwse6Xt"
     },
     success: function(response) {
       console.log(response);
