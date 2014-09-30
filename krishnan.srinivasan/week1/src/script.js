@@ -1,9 +1,9 @@
 console.log("javascript working!"); // Just to test. 
 var loadJSON = function() {
-  $("#list").empty();
   $.get("http://www.reddit.com/hot.json", function(response) {
     // If you don't understand line 6, you may want to read up
     // on Javascript objects, in the slides or internet. 
+    $("#list").empty();
     var stories = response.data.children;
     for(var i in stories) {
       story = stories[i].data;

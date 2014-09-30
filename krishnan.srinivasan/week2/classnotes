@@ -1,0 +1,25 @@
+objects
+dot notation
+key value pairs
+
+http://jsbin.com/lesozeqasahi/2/edit
+
+jQuery events  -- > $("ELEMENT").EVENT
+
+load, unload, ready, resize, scroll
+
+load fires when page begins to load
+unload fires when page is about to be changed or cloased
+ready fires when all html has been loaded
+resize fires when user resizes browser window
+scroll fires when an element or the whole page is scrolled
+
+which on a button object evaluates a right click to 3 when processed by handler
+...
+
+attaching a handler
+$(selector).on(event, handler)
+
+...
+
+ajax
