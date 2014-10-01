@@ -69,7 +69,7 @@ var getFB = function() {
     data: {
       fields: "name,picture",
       // Access token obtained at https://developers.facebook.com/tools/explorer
-      access_token: "CAACEdEose0cBAHyMA26VAcGNrayF88MCyVhjo0oZBKYsopd7ZAmZA6PFKesRT2qbkUX5qw9dJbpRq8pOsRQXVlsyILqZApAqefVyIDLAof55fZAlqfZBIYedeCyYwZATllvxteArm21Fha2gCPbhMLHxZCyc9EB7FzUNelpxsVOyhXPC4w1s0Q85mbsAvLJSCFj3mGkcI0ZC1moUFjLUx0vHLqYdxELBxE9EZD"
+      access_token: "CAACEdEose0cBANN0agy6nV4NcCJqZCKbUuCsPnKfC5KNziqhR7yPNX8ONRIkOdorS9IuM1VmHj1srpAKRqfnFFtZApN7lJbLFoAYwkIvM06nrvtp4XyuxSp6wQpIyOjtdHsTDK9Kw6qDBVqyiyWZBxTQhOc05O6aGLiEKa156VPOK7To0c20DZALL6vKvyniNmD5Tj5LdwDBBWyyz2cG"
     },
     success: function(response) {
       console.log(response);
