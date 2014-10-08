@@ -1,4 +1,5 @@
-angular.module("Todo", []).controller("TodoCtrl", function($scope) {
+angular.module("Todo", [])
+  .controller("TodoCtrl", function($scope) {
   $scope.newItem = {}
   $scope.todoList = [
     { text: "Clean room" },
@@ -15,4 +16,5 @@ angular.module("Todo", []).controller("TodoCtrl", function($scope) {
     $scope.todoList[index].done = !$scope.todoList[index].done;
   }
 });
+
 

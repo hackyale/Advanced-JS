@@ -1,0 +1,12 @@
+<style>
+  #target-box {
+    position: absolute;
+    width: 100px; height: 100px;
+    background-color: blue;
+    top: 200px; left: 200px;
+  }
+</style>
+<div id="target-box" ng-click="addPoint()"></div>
+<button ng-click="start()">Start</button>
+<p>Points: {{points}}</p>
+<p>Time: {{time}}</p>
