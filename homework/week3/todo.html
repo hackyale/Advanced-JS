@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <title>Angular!</title>
+  <!-- Angular -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="./todo.js"></script>
+  <!-- Make your own stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body ng-app="Todo">
+  <div ng-controller="TodoCtrl">
+    <ul id="list">
+      <li ng-repeat="item in todoList">
+        <span class="item" ng-class="{done: item.done}">{{$index + 1}}: {{item.text}}</span>
+        <span class="link" ng-click="toggleDone($index)" ng-hide="item.done">done!</span>
+        <span class="link" ng-click="toggleDone($index)" ng-hide="!item.done">undo</span>
+      </li>
+    </ul>
+    <form ng-submit="addItem()">
+      <input type="text" ng-model="newItem.text">
+      <input type="submit" value="Add item">
+    </form>
+  </div>
+</body>
+</html>
